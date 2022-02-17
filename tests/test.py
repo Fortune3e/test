@@ -30,7 +30,7 @@ correctIntraj.read_correct_infil()
 correctInmag = CorrectInfil("./correct_inmag")
 correctInmag.read_correct_infil()
 
-subprocess.run(["./InfilGenerator", "./caspoloha.dat0", "./infil0"], shell=false)
+subprocess.run(["./InfilGenerator", "./caspoloha.dat0", "./infil0"], shell=False)
 subprocess.run(["./InfilGenerator", "./trajectory.dat0", "./intraj0", "trajectory"])
 subprocess.run(["./InfilGenerator", "./mag.dat0", "./magInfil/inmag0", "mag"])
 
